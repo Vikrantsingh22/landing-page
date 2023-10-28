@@ -1,0 +1,49 @@
+.AboutBody {
+  background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.typewriter-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.typewriter-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.typewriter-box {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 40px;
+  border: 2px solid black;
+  width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+  overflow-y: auto;
+  border-radius: 20px;
+}
+
+.typewriter-box p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .typewriter-box {
+    width: 60%;
+  }
+}

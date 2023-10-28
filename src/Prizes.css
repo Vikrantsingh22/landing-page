@@ -1,0 +1,114 @@
+.prizebody {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  color: rgba(50, 51, 51, 0.8);
+  line-height: 2.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.prizes-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.prizes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.prize-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 20px;
+  box-shadow: 0 0 20px -15px #ff0505;
+  transition: transform 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: transparent;
+  border: 10px solid #ffd580;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prize-card:hover {
+  transform: scale(1.05);
+}
+
+.prize-card:hover .service-logo img {
+  transform: rotate(360deg);
+}
+
+h4 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.prize-heading {
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.prize-card:hover .prize-heading {
+  transform: translateY(-10px);
+}
+
+.prize-card:hover {
+  animation: neonGlow 1s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 20px -5px #5737e5, 0 0 20px 5px #4ced4c;
+  }
+  100% {
+    box-shadow: 0 0 20px -5px #766176, 0 0 20px 5px #766176;
+  }
+}
+
+.prize-card {
+  transition: transform 0.5s ease-in-out 0.2s;
+}
+
+.prize-heading {
+  font-weight: normal;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.service-logo img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  transition: transform 1s;
+}
+
+.prize-card:nth-child(2) .service-logo {
+  border-color: #add8e6;
+}
+
+.prize-card:nth-child(3) .service-logo {
+  border-color: #ff7f7f;
+}
+
+.subheading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffd580;
+  margin: 10px 0;
+}

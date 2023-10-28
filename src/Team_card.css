@@ -1,0 +1,126 @@
+.card-body {
+  z-index: 1000;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.team-cards {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(bgforcards.jpeg);
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.card {
+  margin: 3em 1em 1em 1em;
+  max-width: 35em;
+  background: rgba(171, 171, 171, 0.1);
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+  border-radius: 0.8em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  position: relative;
+  backdrop-filter: blur(4px);
+  border: 1px #555 solid;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(0deg, #59fc72, #02bafc);
+  width: 0;
+  height: 0;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.team-image {
+  width: 6em;
+  height: 6em;
+  margin: -4em auto 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #59fc72, #02bafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 0.5em #26293e;
+}
+
+.imageprof {
+  width: 90%;
+  height: 90%;
+  border-radius: inherit;
+}
+
+.team-name {
+  margin: 1e, 0 0 0;
+}
+
+.team-about {
+  color: #fff;
+  margin: 2em 0 0.5em 0;
+  font-weight: 400;
+}
+
+.team-about-paragraph {
+  color: #81848f;
+  font-size: 0.9em;
+  line-height: 27px;
+  max-width: 20em;
+  margin: 0.2em auto 2em auto;
+}
+.designation {
+  color: #646771;
+}
+
+.team-about-paragraph,
+.designation {
+  transition: 0.2s;
+}
+
+.card:hover .team-about-paragraph,
+.card:hover .designation {
+  color: #fff;
+}
+
+.card:hover::before {
+  animation: fill 1s ease-in-out forwards;
+}
+
+.card:nth-child(2) .team-image,
+.card:nth-child(2)::before {
+  background: linear-gradient(0deg, #ffc15d, #ff4e57);
+}
+
+.card:nth-child(3) .team-image,
+.card:nth-child(3)::before {
+  background: linear-gradient(0deg, #ab2fbf, #f9e44f);
+}
+
+@keyframes fill {
+  40% {
+    width: 100;
+    height: 0.5em;
+  }
+  50% {
+    width: 100%;
+    height: 0.5em;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}

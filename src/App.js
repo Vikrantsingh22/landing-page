@@ -1,12 +1,26 @@
+import TypewriterBox from "./About";
 import "./App.css";
-import Hero from "./Parallax";
-import Scroll from "./Scroll";
+import Herro from "./Herro";
+import Prizes from "./Prizes";
+// import Sponsors from "./Sponsors";
+// import Hero from "./Parallax";
+// import Scroll from "./Scroll";
+import TeamMemberCard from "./Team_card";
+import Time from "./Time";
+// import Random from "./Random.js";
 
 function App() {
   return (
     <div className="App">
+      {/* <Random /> */}
       {/* <Hero /> */}
-      <Scroll />
+      {/* <Scroll /> */}
+      <Herro />
+      <TeamMemberCard />
+      <Prizes />
+      <Time />
+      <TypewriterBox />
+      {/* <Sponsors /> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
