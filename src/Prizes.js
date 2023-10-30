@@ -2,7 +2,7 @@ import React from "react";
 import "./Prizes.css";
 function Prizes() {
   return (
-    <div className=".prizebody">
+    <div className="prizebody">
       <h2 className="prizes-heading">Prizes</h2>
       <p className="subheading">Top Rewards for Top Ideas</p>
       <div className="prizes-container">

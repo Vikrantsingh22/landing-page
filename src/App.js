@@ -6,7 +6,10 @@ import Prizes from "./Prizes";
 // import Hero from "./Parallax";
 // import Scroll from "./Scroll";
 import TeamMemberCard from "./Team_card";
-import Time from "./Time";
+import CountdownTimer from "./Test1.js";
+import Timeline from "./Timeline";
+// import Time from "./Time";
+
 // import Random from "./Random.js";
 
 function App() {
@@ -16,10 +19,14 @@ function App() {
       {/* <Hero /> */}
       {/* <Scroll /> */}
       <Herro />
+      <CountdownTimer />
+      <Timeline />
       <TeamMemberCard />
+
       <Prizes />
-      <Time />
+      {/* <Time /> */}
       <TypewriterBox />
+
       {/* <Sponsors /> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

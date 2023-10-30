@@ -21,7 +21,34 @@
 }
 
 .prize-card {
-  background: #fff;
+  backdrop-filter: blur(4px);
+  /* background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(42, 171, 237, 1) 39%,
+    rgba(209, 0, 255, 1) 96%
+  ); */
+  background-image: radial-gradient(
+    circle 311px at 8.6% 27.9%,
+    rgba(62, 147, 252, 0.57) 12.9%,
+    rgba(239, 183, 192, 0.44) 91.2%
+  );
+  /* background-image: linear-gradient(
+    64.3deg,
+    rgba(254, 122, 152, 0.81) 17.7%,
+    rgba(255, 206, 134, 1) 64.7%,
+    rgba(172, 253, 163, 0.64) 112.1%
+  ); */
+  /* background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(201, 227, 231, 1) 0%,
+    rgba(123, 203, 237, 1) 90%
+  ); */
+  /* background-image: linear-gradient(
+    108.7deg,
+    rgba(221, 22, 224, 1) 11%,
+    rgba(111, 22, 190, 1) 88.2%
+  ); */
   padding: 15px;
   border-radius: 10px;
   margin: 20px 20px;
