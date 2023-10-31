@@ -9,7 +9,11 @@ function Timeline() {
         </div>
         <p className="Timelinep">The ultimate arctic adventure</p>
       </div>
+
       <div className="timeline">
+      <div className="scheduleHead">
+        <h2>SCHEDULE</h2>
+      </div>
         <div className="checkpoint">
           <div>
             <h2 className="Timelineh2">Day 1: Helsinki, Finland</h2>
@@ -66,6 +70,9 @@ function Timeline() {
             </p>
           </div>
         </div>
+        <div className="scheduleHead">
+        <h2>END</h2>
+      </div>
       </div>
     </div>
   );

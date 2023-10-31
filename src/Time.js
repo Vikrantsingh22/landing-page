@@ -45,35 +45,35 @@ const Time = () => {
       <section className="Timer-Container">
         <section className="Timer">
           <div>
-            <h2>The Registration Begins in:</h2>
+            <h2 className="richText">Hackathon Begins in:</h2>
           </div>
 
           <div>
             <section>
               <p>{timeDays}</p>
               <p>
-                <small>Days</small>
+                <small className="richText">Days</small>
               </p>
             </section>
             <span>:</span>
             <section>
               <p>{timeHours}</p>
               <p>
-                <small>Hours</small>
+                <small className="richText">Hours</small>
               </p>
             </section>
             <span>:</span>
             <section>
               <p>{timeMinutes}</p>
               <p>
-                <small>Minutes</small>
+                <small className="richText">Minutes</small>
               </p>
             </section>
             <span>:</span>
             <section>
               <p>{timeSeconds}</p>
               <p>
-                <small>Seconds</small>
+                <small className="richText">Seconds</small>
               </p>
             </section>
           </div>

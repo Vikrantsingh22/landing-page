@@ -24,6 +24,8 @@
 
 .typewriter-box {
   background-color: rgba(0, 0, 0, 0);
+  color: white;
+  backdrop-filter: blur(4px);
   padding: 40px;
   border: 2px solid black;
   width: 500px;

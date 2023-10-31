@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.richText {
+  z-index: 1000;
+}
+
 .Timebody {
   font-size: 16px;
   font-family: Arial, sans-serif;
