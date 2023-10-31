@@ -21,6 +21,7 @@
 }
 
 .prize-card {
+  position: relative;
   backdrop-filter: blur(4px);
   /* background: linear-gradient(
     90deg,
@@ -75,7 +76,7 @@
   transform: scale(1.05);
 }
 
-.prize-card:hover .service-logo img {
+.prize-card:hover .service-logo .imageprof {
   transform: rotate(360deg);
 }
 
@@ -117,10 +118,14 @@ h4 {
   margin: 5px 0;
 }
 
-.service-logo img {
-  width: 70%;
+.service-logo .imageprof {
+  position: absolute;
+  bottom: 152px;
+  background: url("image-full.png") no-repeat center;
+  background-size: cover;
+  width: 60%;
   height: 70%;
-  object-fit: contain;
+  /* object-fit: contain; */
   transition: transform 1s;
 }
 
@@ -138,4 +143,10 @@ h4 {
   font-size: 1.5rem;
   color: #ffd580;
   margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .prize-card:nth-child(1), .prize-card:nth-child(2) {
+    margin-bottom: 100px;
+  }
 }

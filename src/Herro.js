@@ -31,6 +31,12 @@ function Herro() {
           src="background.jpg"
           alt="background"
         />
+        <img
+          className="image2"
+          style={{ width: "100%" }}
+          src="mobileBG.png"
+          alt="background"
+        />
       </Plx>
       <Plx
         parallaxData={[
@@ -53,15 +59,14 @@ function Herro() {
           width: "100%",
         }}
       >
-        <img
-          style={{
-            width: "30vw",
-          }}
-          //   src="/text-img.webp"
-          className="image1"
-          src="hacklogo.png"
-          alt="Goonies"
-        />
+        <div>
+          <img
+            //   src="/text-img.webp"
+            className="image1"
+            src="hacklogo.png"
+            alt="Goonies"
+          />
+        </div>
       </Plx>
       {/* <div
         style={{

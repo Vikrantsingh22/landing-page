@@ -1,0 +1,191 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+} */
+
+.sponContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4f14d8, #a99bf9);
+    padding: 10px;
+}
+
+.card1{
+    /* backdrop-filter: blur(4px); */
+    border: 2px solid white;
+    width: 350px;
+    height: 515px;
+    margin:400px auto 0;
+    background: linear-gradient(90deg,transparent,transparent) ;
+    perspective: 1000px;
+
+}
+.card2{
+    /* backdrop-filter: blur(4px); */
+    width: 350px;
+    height: 515px;
+    margin:400px auto 0;
+    background: linear-gradient(90deg,transparent,transparent);
+    perspective: 1000px;
+
+}
+.card3{
+    /* backdrop-filter: blur(4px); */
+    width: 350px;
+    height: 515px;
+    margin:400px auto 0;
+    background: linear-gradient(90deg,transparent,transparent);
+    perspective: 1000px;
+
+}
+.card4{
+    /* backdrop-filter: blur(4px); */
+    width: 350px;
+    height: 515px;
+    margin:400px auto 0;
+    background-color:linear-gradient(90deg,transparent,transparent);
+    perspective: 1000px;
+
+}
+
+.card-inner {
+   
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    
+}
+
+.front,.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; /* Corrected property name */
+    position: absolute;
+    backface-visibility: hidden;
+    background: linear-gradient(90deg,transparent,transparent);
+    box-shadow: 0 25px 45px rgb(0 0 0 / 72%);
+
+}
+
+
+
+.back{
+  
+color: white;
+    padding: 20px 40px;
+   transform: rotateY(180deg);
+}
+.back button{
+    background:#7800ad ;
+    color:#fff;
+border:0;
+outline: 0;
+padding:8px 25px;
+border-radius:30px;
+font-size: 14px;
+margin-right: 15px;
+box-shadow: 0 8px 10px rgba(120,0,173,0.3);
+cursor:pointer;
+}
+a img {
+    width: 40px;
+    height: 40px;}
+
+a:first-child img {
+    margin-right: 5px; 
+}
+
+a:last-child img {
+   
+    width: 40px; 
+    height: 40px; 
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-top: 30px; 
+}
+.col{
+    flex: 1;
+    text-align: center;
+    color:#fff;
+    font-size: 12px;
+    position: relative;
+}
+.col h2{
+    font-size: 20px;
+}
+.col::after{
+    content: '';
+    width: 1.5px;
+    height:20px;
+    background: #7800ad;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.col:last-child:after{
+    display: none;
+}
+.back h1 {
+    font-size: 50px;
+    margin-top: 50px; /* Removed the extra semicolon */
+    text-align: center;
+}
+
+.card1:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card2:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card3:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card4:hover .card-inner {
+    transform: rotateY(180deg);
+}.img-box {
+    /* Adjust dimensions or any other properties causing issues on smaller screens */
+    /* Example adjustments */
+    width: 80%; /* Adjust width */
+    height: 60%; 
+    align-items: center;/* Adjust height */
+    border-radius: 15px;
+background: white;
+}
+.front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Add your existing CSS */
+
+/* Add the media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1, .card2, .card3, .card4 {
+        width: 80%; /* Adjust width according to your design */
+        margin: 20px auto; /* Adjust margin as needed */
+    }
+
+    
+
+    /* Other adjustments for smaller screens */
+}
+@media screen and (max-width: 768px) {
+    .img-box {
+        width: 90%; /* Adjust width for smaller screens */
+        height: 40%; /* Adjust height for smaller screens */
+    }
+}

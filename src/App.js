@@ -2,6 +2,7 @@ import TypewriterBox from "./About";
 import "./App.css";
 import Herro from "./Herro";
 import Prizes from "./Prizes";
+import Sponsor from "./Sponsor";
 // import Sponsors from "./Sponsors";
 // import Hero from "./Parallax";
 // import Scroll from "./Scroll";
@@ -22,8 +23,8 @@ function App() {
       <CountdownTimer />
       <Timeline />
       <TeamMemberCard />
-
       <Prizes />
+      <Sponsor/>
       {/* <Time /> */}
       <TypewriterBox />
 

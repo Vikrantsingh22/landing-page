@@ -8,14 +8,21 @@
   background: #000;
   height: 200vh;
 }
-/* .image,
 .image1 {
-  display: block;
-} */
+  width: 30vw;
+}
+.image2 {
+  display: none;
+}
 @media screen and (max-width: 600px) {
-  .image,
   .image1 {
+    width: 55vw;
+  }
+  .image {
     display: none;
+  }
+  .image2 {
+    display: block;
   }
   .parallaxbody {
     font-family: Arial Black, sans-serif;

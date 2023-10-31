@@ -36,6 +36,7 @@
   margin-bottom: 0.5em;
 }
 .title {
+  visibility: hidden;
   text-align: center;
 }
 
@@ -47,6 +48,7 @@
 .timeline {
   margin: 5em auto;
   max-width: 34.15em;
+  position: relative;
 }
 .checkpoint {
   max-width: 34em;
@@ -70,6 +72,7 @@
   line-height: 27px;
   color: #ccc;
 }
+
 .checkpoint:nth-child(odd) {
   border-left: 3px solid white;
   padding-left: 3em;
@@ -154,4 +157,42 @@
     rgba(62, 147, 252, 0.57) 12.9%,
     rgba(239, 183, 192, 0.44) 91.2%
   );
+}
+
+.endHead {
+  padding: 25px 0;
+  border-radius: 15px;
+  margin: 0 auto;
+  width: 40%;
+  backdrop-filter: blur(4px);
+  background-image: radial-gradient(
+    circle 311px at 8.6% 27.9%,
+    rgba(62, 147, 252, 0.57) 12.9%,
+    rgba(239, 183, 192, 0.44) 91.2%
+  );
+}
+
+#lastCheck {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #lastCheck {
+    display: block;
+  }
+  .scheduleHead {
+    width: 55%;
+    margin-bottom: 32px;
+    margin-top: 0px;
+  }
+  .endHead {
+    width: 55%;
+    position: absolute;
+    top: 98.2%;
+    left: 24%;
+  }
+  .Timelinebody {
+    background: url("mobileBG.png") no-repeat center fixed;
+    background-size: cover;
+  }
 }

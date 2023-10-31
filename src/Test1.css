@@ -114,3 +114,39 @@
 .segment-title {
   font-size: 1rem;
 }
+
+@media (max-width: 600px) {
+  .container-segment {
+    width: 75px;
+  }
+  .containerbody {
+    /* margin-top: 60px; */
+    /* margin-bottom: 60px; */
+    padding: 0;
+    width: 100%;
+    border-radius: 0%;
+    position: absolute;
+    top: 20%;
+    background-image: none;
+    /* backdrop-filter: blur(0px); */
+    background-color: transparent;
+  }
+  .bottom, .top{
+    background: radial-gradient(
+    circle 311px at 8.6% 27.9%,
+    rgba(62, 147, 252, 0.57) 12.9%,
+    rgba(239, 183, 192, 0.44) 91.2%
+  );
+  }
+  /* .flip-card .bottom-flip, 
+  .flip-card .top-flip {
+    background-color: black;
+  } */
+
+}
+
+@media (max-width: 385px) {
+  .containerbody {
+    top: 26%;
+  }
+}
