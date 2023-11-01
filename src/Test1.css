@@ -15,10 +15,10 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.25rem;
 }
-.containerbody{
+.containerbody {
   padding: 25px 0;
   border-radius: 15px;
-  margin: 0 auto;
+  margin: 0px auto;
   width: 40%;
   backdrop-filter: blur(4px);
   background-image: radial-gradient(
@@ -44,6 +44,17 @@
   line-height: 1;
   padding: 0.25em;
   overflow: hidden;
+  /* background-image: linear-gradient(
+    173.1deg,
+    rgba(226, 66, 249, 0.94) 10.2%,
+    rgba(79, 147, 249, 1) 77.3%
+  ); */
+  /* background: linear-gradient(0deg, #ffc15d, #ff4e57); */
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(48, 207, 208, 1) 11.2%,
+    rgba(51, 8, 103, 1) 92.5%
+  );
 }
 
 .top,
@@ -131,18 +142,18 @@
     /* backdrop-filter: blur(0px); */
     background-color: transparent;
   }
-  .bottom, .top{
+  .bottom,
+  .top {
     background: radial-gradient(
-    circle 311px at 8.6% 27.9%,
-    rgba(62, 147, 252, 0.57) 12.9%,
-    rgba(239, 183, 192, 0.44) 91.2%
-  );
+      circle 311px at 8.6% 27.9%,
+      rgba(62, 147, 252, 0.57) 12.9%,
+      rgba(239, 183, 192, 0.44) 91.2%
+    );
   }
   /* .flip-card .bottom-flip, 
   .flip-card .top-flip {
     background-color: black;
   } */
-
 }
 
 @media (max-width: 385px) {

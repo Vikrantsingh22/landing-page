@@ -1,6 +1,7 @@
 import React from "react";
 import Plx from "react-plx";
 import "./Herro.css";
+import Navbar from "./Navbar";
 function Herro() {
   return (
     <div className="parallaxbody">
@@ -37,6 +38,30 @@ function Herro() {
           src="mobileBG.png"
           alt="background"
         />
+      </Plx>
+      <Plx
+        // yaha par Navbar add kiya hain
+        parallaxData={[
+          {
+            start: 0,
+            end: 100,
+            properties: [
+              {
+                startValue: 1,
+                endValue: 0,
+                property: "opacity",
+              },
+            ],
+          },
+        ]}
+        style={{
+          position: "fixed",
+          left: 0,
+          top: "0",
+          width: "100%",
+        }}
+      >
+        <Navbar />
       </Plx>
       <Plx
         parallaxData={[

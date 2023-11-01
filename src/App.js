@@ -1,6 +1,8 @@
 import TypewriterBox from "./About";
 import "./App.css";
+import Footer from "./Footer";
 import Herro from "./Herro";
+// import Navbar from "./Navbar";
 import Prizes from "./Prizes";
 import Sponsor from "./Sponsor";
 // import Sponsors from "./Sponsors";
@@ -20,13 +22,15 @@ function App() {
       {/* <Hero /> */}
       {/* <Scroll /> */}
       <Herro />
+      {/* <Navbar /> */}
       <CountdownTimer />
       <Timeline />
       <TeamMemberCard />
       <Prizes />
-      <Sponsor/>
+      <Sponsor />
       {/* <Time /> */}
       <TypewriterBox />
+      <Footer />
 
       {/* <Sponsors /> */}
       {/* <header className="App-header">
