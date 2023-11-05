@@ -1,5 +1,6 @@
 import TypewriterBox from "./About";
 import "./App.css";
+import FAQ from "./FAQ.js";
 import Footer from "./Footer";
 import Herro from "./Herro";
 // import Navbar from "./Navbar";
@@ -30,6 +31,7 @@ function App() {
       <Sponsor />
       {/* <Time /> */}
       <TypewriterBox />
+      <FAQ/>
       <Footer />
 
       {/* <Sponsors /> */}
